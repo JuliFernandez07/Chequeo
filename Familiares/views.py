@@ -22,24 +22,24 @@ def familia(request):
     hermana_2.save()
     novia.save()
     diccionario_famila = {
-        "Nombre Madre":mama.nombre,
-        "Nacimiento Madre":mama.nacimiento,
-        "Parentesco Madre":mama.parentesco,
-        "Nombre Padre":papa.nombre,
-        "Nacimiento Padre":papa.nacimiento,
-        "Parentesco Padre":papa.parentesco,
-        "Nombre Hermana":hermana_1.nombre,
-        "Nacimiento Hermana":hermana_1.nacimiento,
-        "Parentesco Hermana":hermana_1.parentesco,
-        "Nombre Hermana2":hermana_2.nombre,
-        "Nacimiento Hermana2":hermana_2.nacimiento,
-        "Parentesco Hermana2":hermana_2.parentesco,
-        "Nombre novia":novia.nombre,
-        "Nacimiento novia":novia.nacimiento,
-        "Parentesco novia":novia.parentesco,
+        "Nombre_Madre":mama.nombre,
+        "Nacimiento_Madre":mama.nacimiento,
+        "Parentesco_Madre":mama.parentesco,
+        "Nombre_Padre":papa.nombre,
+        "Nacimiento_Padre":papa.nacimiento,
+        "Parentesco_Padre":papa.parentesco,
+        "Nombre_Hermana":hermana_1.nombre,
+        "Nacimiento_Hermana":hermana_1.nacimiento,
+        "Parentesco_Hermana":hermana_1.parentesco,
+        "Nombre_Hermana2":hermana_2.nombre,
+        "Nacimiento_Hermana2":hermana_2.nacimiento,
+        "Parentesco_Hermana2":hermana_2.parentesco,
+        "Nombre_novia":novia.nombre,
+        "Nacimiento_novia":novia.nacimiento,
+        "Parentesco_novia":novia.parentesco,
     }
-    dochtml = loader.get_template("Plantillas\inicio.html")
-    renderizado = dochtml.render({diccionario_famila})
+    dochtml = loader.get_template("C:/Users/Julián/Desktop/MVT/Plantillas/inicio.html")
+    renderizado = dochtml.render(diccionario_famila)
     return HttpResponse(renderizado)
     
     
